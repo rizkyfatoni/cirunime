@@ -16,16 +16,16 @@ const InputSearch = () => {
         }
     }
 
-    return (
+    return (    
         <div className="relative">
             <input 
                 placeholder="cari anime"
-                className="bg-white w-full p-2 rounded"
+                className="bg-secondary text-amber-50 w-full p-2 rounded"
                 ref={searchRef}
                 onKeyDown={handleSearch}
             />
-            <button className="absolute top-2 end-2 cursor-pointer" onClick={handleSearch}>
-                <MagnifyingGlassIcon size={24} />
+            <button className="absolute top-2.5 end-2 cursor-pointer text-white opacity-50" onClick={handleSearch}>
+                <MagnifyingGlassIcon size={20} />
             </button>
         </div>
     )

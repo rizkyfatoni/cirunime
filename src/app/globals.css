@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* di globals.css */
+:root {
+  --font-gabarito: sans-serif; 
+}
+
+@theme {
+  --color-primary: #222730;
+  --color-secondary: #16181c;
+  --color-accent: #e9bcb9;
+}
+
+body {
+  font-family: var(--font-gabarito);
+}
+
 /*
 *, *::before, *::after {
     padding: 0;
@@ -7,15 +22,3 @@
     box-sizing: border-box;
 }
 */
-
-img {
-    transtition: .3s ease all;
-    -webkit-transtition: .3s ease all;
-    -moz-transtition: .3s ease all;
-    -ms-transtition: .3s ease all;
-    -o-transtition: .3s ease all;
-}
-
-img:hover {
-    scale: 102%
-}
